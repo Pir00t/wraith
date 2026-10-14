@@ -209,6 +209,15 @@ tempCodeRunnerFile.py
 # PyPI configuration file
 .pypirc
 
+# WRAITH sensor data and generated case material
+# Keep real Cowrie telemetry, captured payloads, and audit history local.
+data/raw/*
+!data/raw/fixtures/
+!data/raw/fixtures/**
+data/downloads/
+logs/*
+!logs/.gitkeep
+
 # Marimo
 marimo/_static/
 marimo/_lsp/
@@ -216,3 +225,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Reviewed Cowrie payload evidence
+data/downloads/
+data/payload_manifest*.json
